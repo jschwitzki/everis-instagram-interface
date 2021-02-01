@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.instagram-wrapper a,
+.instagram-wrapper a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.instagram-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40%;
+  height: 100vh;
+}
+
+.instagram-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  margin-right: 2rem;
+}
+
+.instagram-phone img {
+  height: 40rem;
+}
+.instagram-continue {
+  margin-top: -3rem;
+  display: flex;
+  justify-content: space-between; /* vertical */
+  align-items: center; /* horizontal */
+  flex-direction: column;
+  width: 50%;
+  height: 36rem;
+}
+
+.facebook-login {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.facebook {
+  display: flex;
+  background-image: url(./assets/img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  height: 16px;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.instagram-continue div {
+  width: 100%;
+}
+.instagram-continue div:nth-child(2) {
+  margin-top: 15px;
+}
+.instagram-continue div:nth-child(2) a {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #0095f6;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1.5px solid lightgrey;
+  border-radius: 8px;
+}
+
+.container:first-of-type {
+  padding: 50px 0 20px 0;
+}
+
+.container div button {
+  margin-top: 20px;
+  background-color: #0095f6;
+  width: 100%;
+  padding: 8px 0;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 1.5px solid #0095f6;
+}
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5px 60px;
+}
+
+.container div div {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-width: 140%;
+}
+
+.container div div p {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0 15px;
+  color: grey;
+}
+.container div div box {
+  border-width: 1.5px 0 0 0;
+  width: 100%;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+.small {
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container div input {
+  background-color: #fafafa;
+  border: 1.5px solid lightgrey;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 11px 8px;
+  width: 100%;
+}
+
+.container div input:nth-child(2) {
+  margin-top: 8px;
+}
+
+.download {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.download div img {
+  margin: 0 5px;
+  width: 38%;
+}
+
+.instagram-letters {
+  background-image: url(./assets/img/sprites.png);
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 51px;
+  width: 175px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+footer div:nth-child(2){
+    margin-top: 5px;
+}
+footer p {
+    margin-top: 15px;
+}
+footer * {
+    font-size: 13px;
+    color: #8e8e8e;
+    margin: 3px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/* media queries */
+
+@media (max-width: 1550px) {
+  .instagram-wrapper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .instagram-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+footer {
+    padding: 0 5% 30px 5%;
+}
+
+  .instagram-wrapper {
+    width: 90%;
+  }
+  .instagram-phone {
+    display: none;
+  }
+  .instagram-continue {
+    width: 100%;
+    margin-top: -6rem;
+  }
+  .instagram-logo {
+    width: 30%;
+  }
+  .profile-photo img {
+    width: 50px;
+  }
+}
